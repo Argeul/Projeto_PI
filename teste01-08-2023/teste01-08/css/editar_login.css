@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif; /* Fonte do corpo do documento */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimento padrão */
+}
+
+.container {
+  max-width: 400px; /* Largura máxima do contêiner */
+  margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+  padding: 20px; /* Preenchimento interno do contêiner */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center; /* Centraliza o conteúdo do contêiner */
+  box-shadow: 5px 3px 50px rgba(12, 104, 21, 0.642);
+}
+
+img {
+  max-width: 100%; /* Ajusta a imagem para ocupar a largura máxima do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-bottom: 20px; /* Margem inferior da imagem */
+}
+
+form {
+  text-align: left; /* Alinha o texto do formulário à esquerda */
+}
+
+label {
+  display: block; /* Exibe o rótulo em um bloco separado */
+  margin-bottom: 5px; /* Margem inferior do rótulo */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 95%; /* Largura total do campo de entrada */
+  padding: 10px; /* Preenchimento interno do campo de entrada */
+  margin-bottom: 10px; /* Margem inferior do campo de entrada */
+  border-radius: 4px; /* Cantos arredondados do campo de entrada */
+  border: 1px solid #ccc; /* Borda do campo de entrada */
+}
+
+input[type="submit"] {
+  width: 405px; /* Largura total do botão de envio */
+  padding: 10px; /* Preenchimento interno do botão de envio */
+  background-color: #4caf50; /* Cor de fundo do botão de envio */
+  color: #fff; /* Cor do texto do botão de envio */
+  border: none; /* Remove a borda do botão de envio */
+  border-radius: 4px; /* Cantos arredondados do botão de envio */
+  cursor: pointer; /* Mostra o cursor como ponteiro ao passar o mouse */
+}
+
+input[type="submit"]:hover {
+ 
+  background-color: #346437; /* Cor de fundo do botão de envio ao passar o mouse */
+}
+
+
+a {
+  display: block;
+  text-decoration: none;
+  color: #0066cc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a:hover {
+  color: #15395d;
+}

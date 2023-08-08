@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body {
+ margin: 0;
+ font-family: Oswald;
+}
+
+h1 {
+ margin: 0;
+ text-align: center;
+ border-bottom: 1px solid #000;
+ background-color: #283739; 
+ color: #fff;
+ top: 0;
+ position: sticky;
+ margin-bottom: 30px;
+}
+
+fieldset {
+ width: 45%;
+ margin: 20px auto;
+ background: #e0e0e0; 
+ border-radius: 10px;
+ box-shadow: 5px 5px 5px #283739; 
+ padding: 30px;
+ padding-bottom: 10px;
+}
+
+label.alinha {
+ display: inline-block;
+ width: 200px;
+ text-align: right;
+ margin-bottom: 20px;
+}
+
+input, button, textarea {
+ font-family: Oswald;
+ font-size: 16px;
+}
+
+button {
+ width: 250px;
+ font-size: 18px;
+ margin-left: 30px;
+ height: 40px;
+ display: block;
+ margin: 15px auto;
+ margin-bottom: 5px;
+}
+
+p {
+ background: #e0e0e0; 
+ border: 1px solid #283739;
+ width: 50%;
+ margin: 20px auto;
+ text-align: center;
+}
+
+span {
+ font-weight: bold;
+ color:  #2c5d63; 
+}
+
+table {
+ background: #e0e0e0; 
+ border: 1px solid #2c5d63; 
+ margin: 30px auto;
+ width: 60%;
+ height: 300px;
+ border-collapse: collapse; /*tira o espaço entre células*/
+}
+
+td, th {
+ border: 1px solid #2c5d63; 
+}
+
+th {
+ font-size: 18px;
+ background: #a2c11c; 
+}
+
+td {
+ text-align: center;
+}
+
+tr:nth-child(even) {
+ background: #fff;
+}
+
+textarea {
+ resize: none;
+ width: 200px;
+ height: 100px;
+ vertical-align: top; /*esta propriedade cuida do alinhamento de texto na vertical. Valores possíveis: bottom (padrão), middle e top*/
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  body {
+    font-family: Arial, sans-serif; /* Fonte do corpo do documento */
+    background-color: #f5f5f5; /* Cor de fundo do corpo do documento */
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+  }
+
+  .container {
+    max-width: 400px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px; /* Preenchimento interno do contêiner */
+    text-align: center; /* Centraliza o conteúdo do contêiner */
+  }
+  
+  img {
+    max-width: 100%; /* Ajusta a imagem para ocupar a largura máxima do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 20px; /* Margem inferior da imagem */
+  }
+  
+  form {
+    text-align: left; /* Alinha o texto do formulário à esquerda */
+  }
+  
+  label {
+    display: block; /* Exibe o rótulo em um bloco separado */
+    margin-bottom: 5px; /* Margem inferior do rótulo */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%; /* Largura total do campo de entrada */
+    padding: 10px; /* Preenchimento interno do campo de entrada */
+    margin-bottom: 10px; /* Margem inferior do campo de entrada */
+    border-radius: 4px; /* Cantos arredondados do campo de entrada */
+    border: 1px solid #ccc; /* Borda do campo de entrada */
+  }
+  
+  input[type="submit"] {
+    width: 424px; /* Largura total do botão de envio */
+    padding: 10px; /* Preenchimento interno do botão de envio */
+    background-color: #4caf50; /* Cor de fundo do botão de envio */
+    color: #fff; /* Cor do texto do botão de envio */
+    border: none; /* Remove a borda do botão de envio */
+    border-radius: 4px; /* Cantos arredondados do botão de envio */
+    cursor: pointer; /* Mostra o cursor como ponteiro ao passar o mouse */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049; /* Cor de fundo do botão de envio ao passar o mouse */
+  }
+  
+  
