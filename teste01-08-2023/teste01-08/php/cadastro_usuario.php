@@ -42,7 +42,16 @@ if (isset($_POST['cadastra-usuario'])) {
         require "../includes/criar-tabelas.inc.php";
         require "../includes/cadastrar-usuario.inc.php";
         require "../includes/desconectar.inc.php";
+    
+        // Define a variável de sessão para mostrar a mensagem de sucesso
+        session_start();
+        $_SESSION['cadastro_sucesso'] = true;
+    
+        // Redireciona o usuário para outra página (substitua "outra_pagina.php" pelo nome da sua outra página)
+        header("Location: sucesso.php");
+        exit; // Certifique-se de fazer um "exit" após o redirecionamento
     }
+    
 }
 ?>
 
