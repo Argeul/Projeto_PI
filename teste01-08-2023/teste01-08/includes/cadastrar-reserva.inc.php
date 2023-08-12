@@ -1,18 +1,24 @@
 <?php
- $turno         = $_POST['turno'];
- $turno         = $_POST['turno'];
- $hoario         = $_POST['horario'];
- $turno         = $conexao->escape_string($turno);
- 
+$data = $_POST['data_reserva'];
+$usuario = $_POST['usuario'];
+$espaco = $_POST['espaco'];
 
- $sql = "INSERT $nomeDaTabela2 VALUES(
-                 null,
-                '$turno'
-                        )";
+// Validando os campos antes da inserção
+if (empty($data) || empty($usuario) || empty($espaco)) {
+  die("<p>Preencha todos os campos obrigatórios.</p>");
+}
 
+// Escapando os valores para prevenir SQL injection
+$data = $conexao->escape_string($data);
+$usuario = $conexao->escape_string($usuario);
+$espaco = $conexao->escape_string($espaco);
 
- $conexao->query($sql) or die($conexao->error);
+$sql = "INSERT INTO $nomeDaTabela3 (data_reserva, usuario, espaco) VALUES ('$data', '$usuario', '$espaco')";
 
- echo "<p> Dados do horario cadastrados com sucesso no banco de dados. </p>";
+if ($conexao->query($sql)) {
+  echo "<p>Dados da reserva cadastrados com sucesso no banco de dados.</p>";
+} else {
+  echo "<p>Erro ao cadastrar a reserva: " . $conexao->error . "</p>";
+}
 
 

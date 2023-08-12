@@ -3,31 +3,10 @@
 <head> 
   <meta charset="utf-8"> 
   <title> Banco de dados com PHP  </title> 
-  <link rel="stylesheet" href="../css/editar_cadastro2.css">
+  <link rel="stylesheet" href="../css/editar_cadastro.css">
 </head>
 
-<body> 
-
-<div class="topnav" id="myTopnav">
-<a href="inicio.php" class="active">Inicio</a>
-  <a href="#news">News</a>
-  <a href="#contact">contato</a>
-  
-  <div class="dropdown">
-    <button class="dropbtn">Cadastros 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-    <a href="cadastro_usuario.php"  > Cadastro de usuario </a>
-      <a href="cadastro_sala.php">Cadastro de Sala</a>
-      <a href="#">Cadastro de reserva</a>
-    </div>
-    
-  </div> 
-  <a href="login.php">Sair</a>
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
-
+<body>
 
 <h1> Cadastrar Espaço </h1>
 
@@ -58,21 +37,16 @@
    require "../includes/criar-tabelas.inc.php";
 
    if(isset($_POST['cadastra-espaco']))
-    {
+{
     require "../includes/cadastrar-espaco.inc.php";
-    }
 
-    if(isset($_POST['cadastra-horario']))
-    {
-    require "../includes/cadastrar-horario.inc.php";
-    }
+    session_start();
+    $_SESSION['cadastro_sucesso'] = true;
 
-    if(isset($_POST['cadastra-usuario']))
-    {
-    require "../includes/cadastrar-usuario.inc.php";
-    }
-
-
+    // Redireciona o usuário para outra página (substitua "outra_pagina.php" pelo nome da sua outra página)
+    header("Location: sucesso.php");
+    exit; // Certifique-se de fazer um "exit" após o redirecionamento
+}
 
   require "../includes/desconectar.inc.php";  
   ?>

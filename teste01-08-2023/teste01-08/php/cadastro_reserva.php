@@ -1,6 +1,8 @@
+
+<link rel="stylesheet" href="../css/editar_cadastro.css">
+
 <fieldset>
-  <legend>Módulo 3 - cadastro de reservas...</legend>
-  <form action="processar_reserva.php" method="post"> <!-- Adiciona o formulário e define o script para processar os dados -->
+  <form action="cadastro_reserva.php" method="post">
     <label class="alinha">Data:</label>
     <input type="date" name="data_reserva"> <br>
 
@@ -47,3 +49,26 @@
     <button type="submit" name="cadastrar-reserva">Cadastrar reserva</button> <!-- Adiciona o botão do tipo "submit" -->
   </form>
 </fieldset>
+
+<?php
+require "../includes/dados-conexao.inc.php";
+require "../includes/conectar.inc.php";
+require "../includes/criar-banco.inc.php";
+require "../includes/abrir-banco.inc.php";
+require "../includes/definir-charset.inc.php";
+require "../includes/criar-tabelas.inc.php";
+
+if(isset($_POST['cadastrar-reserva']))
+{
+  require "../includes/cadastrar-reserva.inc.php";
+
+    session_start();
+    $_SESSION['cadastro_sucesso'] = true;
+
+    // Redireciona o usuário para outra página (substitua "outra_pagina.php" pelo nome da sua outra página)
+    header("Location: sucesso.php");
+    exit; // Certifique-se de fazer um "exit" após o redirecionamento
+}
+
+require "../includes/desconectar.inc.php";
+?>

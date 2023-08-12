@@ -1,0 +1,33 @@
+/* Definindo estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #39ff0822;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+  color: #333;
+}
+
+.success-message {
+  color: #00a600;
+  font-size: 24px;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 24px;
+}

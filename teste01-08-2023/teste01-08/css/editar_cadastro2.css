@@ -107,7 +107,10 @@ body, h1, form {
   
   .dropdown {
     float: left;
-    overflow: hidden;
+    border: 1px solid yellow;
+    margin: 0;
+    padding-left: -5px;
+    text-align: center;
   }
   
   /* arrumar */
@@ -115,11 +118,12 @@ body, h1, form {
     font-size: 17px;
     border: none;
     outline: none;
-    color: rgb(227, 8, 8);
     padding: 14px 16px;
+    padding-bottom: 0;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    margin-top: 3px;
+    margin-left: -5px;
   }
   
  
